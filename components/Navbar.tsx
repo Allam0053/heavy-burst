@@ -9,9 +9,9 @@ function Navbar() {
       <div className="logo hidden">
         {/* <Image src="/logo.png" alt="site logo" width={128} height={77} /> */}
       </div>
-      <Link href="/"><a className={("px-4 text-sm flex flex-col justify-center") + (router.pathname == "/" ? " active" : " ")}>Home</a></Link>
-      <Link href="/about"><a className={("px-4 text-sm flex flex-col justify-center") + (router.pathname == "/about" ? " active" : " ")}>About</a></Link>
-      <Link href="/blogs/"><a className={("px-4 text-sm flex flex-col justify-center") + (router.pathname.startsWith("/blogs") ? " active" : " ") }>Blogs</a></Link>
+      <Link href="/"><a className={("px-4 text-sm flex flex-col justify-center  font-nunito") + (router.pathname == "/" ? " text-[#41EAD4] font-medium active" : " font-semibold text-white")}>Home</a></Link>
+      <Link href="/about"><a className={("px-4 text-sm flex flex-col justify-center font-nunito hover:text-[#41EAD4]") + (router.pathname == "/about" ? " text-[#41EAD4] font-medium active" : " font-semibold text-white")}>About</a></Link>
+      <Link href="/blogs/"><a className={("px-4 text-sm flex flex-col justify-center font-nunito hover:text-[#41EAD4]") + (router.pathname.startsWith("/blogs") ? " text-[#41EAD4] font-medium active" : " font-semibold text-white") }>Blogs</a></Link>
     </nav>
   );
 }
