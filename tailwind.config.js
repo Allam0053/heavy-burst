@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        cyan1: '#EDF9FF',
+        cyan2: '#41EAD4',
+        cyan3: '#00C9E0'
+      },
       fontFamily: {
         nunito: ['Nunito']
       }
