@@ -18,3 +18,49 @@
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 }
+
+.animate-underline {
+  border-bottom: 2px;
+  border-bottom-width: 0;
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);  add the color*/
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.animate-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+.standard-underline {
+  border-bottom: 2px;
+  border-bottom-width: 0;
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);  add the color*/
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+  @apply bg-gradient-to-br from-cyan2 to-cyan3;
+}
+.standard-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3;
+}
+
+.navlink {
+  @apply px-4 text-sm flex flex-col justify-center font-nunito;
+}
+
+.navlink-active {
+  @apply text-cyan2 font-medium active;
+}
+
+.navlink-inactive{
+  @apply font-semibold text-white standard-underline;
+}
