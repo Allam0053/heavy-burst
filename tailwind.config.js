@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cyan1: '#EDF9FF',
-        cyan2: '#41EAD4',
-        cyan3: '#00C9E0'
+        cyan1: '#FFFAFA',
+        cyan2: '#F8AAA0',
+        cyan3: '#F36C9D'
       },
       fontFamily: {
         nunito: ['Nunito']
@@ -17,3 +17,14 @@ module.exports = {
   },
   plugins: [],
 }
+/**
+theme 1 (blue):
+  cyan1: '#EDF9FF',
+  cyan2: '#41EAD4',
+  cyan3: '#00C9E0'
+theme 1 (red):
+  cyan1: '#FFFAFA',
+  cyan2: '#F8AAA0',
+  cyan3: '#F36C9D'
+
+ */

@@ -12,13 +12,15 @@ export default function Home() {
         <title>Ninja List | Home</title>
         <meta name="keywords" content="blogs"/>
       </Head>
-      <div className={('text-cyan1 bg-no-repeat min-h-[80vh] flex flex-col justify-center px-2 md:px-20 lg:px-24 xl:px-48 ') + (windowSize.width < 768 ? 'bg-[url("/background/1.1-mobile.jpg")]' : 'bg-[url("/background/1.desktop.jpg")]')}>
-        <h1 className='font-nunito font-semibold text-3xl standard-underline w-fit'>Hello folks!</h1>
-        <h1 className='font-nunito font-semibold text-3xl mb-8'>Let's <div className='inline-block text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 uppercase font-bold hover:animate-ping z-1'> Burst </div> the Code</h1>
-        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
-        <Link href="/blogs/">
-          <a className='mt-4'>See Ninja Listing</a>
-        </Link>
+      <div className={('bg-no-repeat bg-cover bg-top ') + (windowSize.width < 768 ? 'bg-[url("/background/1.1-mobile.jpg")]' : 'bg-[url("/background/3.jpg")]')}>
+        <div className="backdrop-blur-lg w-full h-full text-cyan1 min-h-[80vh] flex flex-col justify-center px-2 md:px-20 lg:px-24 xl:px-48">
+          <h1 className='font-nunito font-semibold text-3xl standard-underline w-fit'>Hello folks!</h1>
+          <h1 className='font-nunito font-semibold text-3xl mb-8'>Let's <div className='inline-block text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 uppercase font-bold hover:animate-ping z-1'> Burst </div> the Code</h1>
+          <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi impedit suscipit architecto, odio inventore nostrum non neque dicta. Quam magni accusantium culpa distinctio tempore iure accusamus, dolorem nobis odit.</p>
+          <Link href="/blogs/">
+            <a className='mt-4'>See Ninja Listing</a>
+          </Link>
+        </div>
       </div>
     </>
   )
