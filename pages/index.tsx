@@ -22,6 +22,22 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      <div>
+        <h2>Blogs</h2>
+        <div>x</div>
+        <div>some nice project to share</div>
+      </div>
+
+      <div>
+        <img src="" alt="" />
+        <h2>01</h2>
+        <div>Grand dune landscape</div>
+        <div>Chill Adventure</div>
+        <div>Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+
+Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</div>
+      </div>
     </>
   )
 }
