@@ -23,21 +23,48 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
-        <h2>Blogs</h2>
-        <div>x</div>
-        <div>some nice project to share</div>
+      <div className='bg-back backdrop-blur '>
+        <img src="decoration/Vector1.svg" alt="" className=' absolute opacity-50 h-96 w-96'/>
+        <img src="decoration/Vector.svg" alt="" className=' absolute opacity-50 h-[48rem] w-[48rem]'/>
+        <img src="decoration/Vector1.svg" alt="" className='right-0 bottom-0 absolute opacity-50 h-96 w-96'/>
+        <img src="decoration/Vector.svg" alt="" className='right-0 bottom-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
+        <div className='backdrop-blur-xl w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex flex-col'>
+
+          <div className='flex justify-center align-middle mb-5'>
+            <h2 className='text-4xl font-semibold inline tracking-wider uppercase font-dmserif'>Blogs</h2>
+            <div className='text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 font-bold text-lg font-nunito inline mx-4 my-auto'>✕</div>
+            <div className='inline my-auto'>some nice project to share</div>
+          </div>
+
+
+          <div className='grid grid-cols-2 items-center pb-40'>
+            <div className='justify-self-end px-12'>
+              <img src="content/Image.png" alt="" className='z-10'/>
+              <img src="decoration/dots.svg" alt="" className='-translate-y-[50%] -translate-x-[50%] z-10 absolute'/>
+              <div className='absolute top-[50%] -translate-x-[50%] -translate-y-[70%] lg:-translate-y-[50%]'>
+                <div className='w-32 h-4 border-2 border-transparent border-l-cyan2 border-t-cyan2'></div>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 font-bold text-lg uppercase tracking-wider font-nunito'>01</h2>
+                <div className='font-bold text-lg uppercase tracking-wider font-nunito'>Grand dune</div>
+                <div className='font-bold text-lg uppercase tracking-wider font-nunito'>landscape</div>
+              </div>
+            </div>
+
+            <div className='justify-self-start'>
+              <div className='text-4xl font-semibold inline tracking-wider uppercase font-dmserif'>Chill Adventure</div>
+              <div className='text-sm my-8 w-[60%] font-semibold'>
+                Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+              </div>
+              <div className='text-sm my-8 w-[60%]'>
+                Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <h2>01</h2>
-        <div>Grand dune landscape</div>
-        <div>Chill Adventure</div>
-        <div>Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
-
-Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</div>
-      </div>
+      
     </>
   )
 }
