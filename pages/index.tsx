@@ -4,6 +4,10 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import WindowSize from '../type/WindowSize';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 export default function Home() {
   const windowSize = useWindowSize();
   return (
@@ -31,7 +35,7 @@ export default function Home() {
         <div className='backdrop-blur-xl w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex flex-col'>
 
           <div className='flex justify-center align-middle mb-5'>
-            <h2 className='text-4xl font-semibold inline tracking-wider uppercase font-dmserif'>Blogs</h2>
+            <h2 className='text-5xl font-semibold inline tracking-wider uppercase font-dmserif text animate-background'>Blogs</h2>
             <div className='text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 font-bold text-lg font-nunito inline mx-4 my-auto'>✕</div>
             <div className='inline my-auto'>some nice project to share</div>
           </div>
@@ -56,6 +60,21 @@ export default function Home() {
               </div>
               <div className='text-sm my-8 w-[60%]'>
                 Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.
+              </div>
+              <div>
+                <div className='uppercase tracking-widest text-sm font-semibold text-cyan1 mb-2'>share it:</div>
+                <div className='z-10'>
+                  <a href="https://github.com/Allam0053">
+                    <FontAwesomeIcon icon={faInstagram} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer' size="lg"/>
+                  </a>
+                  <a href="#">
+                    <FontAwesomeIcon icon={faFacebook} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer mx-2' size="lg"/>
+                  </a>
+                  <a href="#">
+                    <FontAwesomeIcon icon={faTwitter} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer' size="lg"/>
+                  </a>
+                </div>
+                <div className='w-24 h-6 -translate-y-4 hover:w-32 border-2 border-transparent border-b-cyan2 border-r-cyan2 ease duration-150 -z-10 absolute'></div>
               </div>
             </div>
 

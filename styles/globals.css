@@ -65,3 +65,24 @@
 .navlink-inactive{
   @apply font-semibold text-white standard-underline;
 }
+
+.text-grad {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3;
+}
+
+.animate-background {
+  border-bottom: 2px;
+  border-bottom-width: 0;
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);  add the color*/
+  background-size: 0 100%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+  @apply text-cyan1 bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3;
+}
+
+.animate-background:hover {
+  background-size: 100% 100%;
+  background-position: 0 100%;
+  @apply text-transparent
+}
