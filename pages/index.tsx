@@ -28,10 +28,10 @@ export default function Home() {
       </div>
 
       <div className='bg-back backdrop-blur '>
-        <img src="decoration/Vector1.svg" alt="" className=' absolute opacity-50 h-96 w-96'/>
-        <img src="decoration/Vector.svg" alt="" className=' absolute opacity-50 h-[48rem] w-[48rem]'/>
-        <img src="decoration/Vector1.svg" alt="" className='right-0 bottom-0 absolute opacity-50 h-96 w-96'/>
-        <img src="decoration/Vector.svg" alt="" className='right-0 bottom-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
+        <img src="decoration/Vector1.svg" alt="Vector" className=' absolute opacity-50 h-96 w-96'/>
+        <img src="decoration/Vector.svg" alt="Vector" className=' absolute opacity-50 h-[48rem] w-[48rem]'/>
+        <img src="decoration/Vector1.svg" alt="Vector" className='right-0 bottom-0 absolute opacity-50 h-96 w-96'/>
+        <img src="decoration/Vector.svg" alt="Vector" className='right-0 bottom-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
         <div className='backdrop-blur-xl w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex flex-col'>
 
           <div className='flex justify-center align-middle mb-5'>
@@ -43,8 +43,8 @@ export default function Home() {
 
           <div className='grid grid-cols-2 items-center pb-40'>
             <div className='justify-self-end px-12'>
-              <img src="content/Image.png" alt="" className='z-10'/>
-              <img src="decoration/dots.svg" alt="" className='-translate-y-[50%] -translate-x-[50%] z-10 absolute'/>
+              <img src="content/Image.png" alt="content" className='z-10'/>
+              <img src="decoration/dots.svg" alt="dots" className='-translate-y-[50%] -translate-x-[50%] z-10 absolute'/>
               <div className='absolute top-[50%] -translate-x-[50%] -translate-y-[70%] lg:-translate-y-[50%]'>
                 <div className='w-32 h-4 border-2 border-transparent border-l-cyan2 border-t-cyan2'></div>
                 <h2 className='text-transparent bg-clip-text bg-gradient-to-br from-cyan2 to-cyan3 font-bold text-lg uppercase tracking-wider font-nunito'>01</h2>
@@ -80,6 +80,32 @@ export default function Home() {
 
           </div>
 
+        </div>
+      </div>
+
+
+      <div className='bg-back backdrop-blur'>
+        <div className='backdrop-blur-xl w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex'>
+          <div className='w-[50%]'>
+            <h2>About Us</h2>
+            <div>
+              We're a team of four passioned people.
+
+              We're ready to take the world by storm and 
+              let you find new travel opportunities.
+
+              Our everyday task is to make sure that you satisfied with the services and products that we provide. 
+
+              With 💖 from Amsterdam, Netherlands.
+            </div>
+            <button>READ MORE ABOUT US</button>
+          </div>
+          <div className='w-[50%]'>
+            <img src="content/1.png" alt="content" className='w-[50%] inline' />
+            <img src="content/2.png" alt="content" className='w-[50%] inline' />
+            <img src="content/3.png" alt="content" className='w-[50%] inline' />
+            <img src="content/4.png" alt="content" className='w-[50%] inline' />
+          </div>
         </div>
       </div>
 
