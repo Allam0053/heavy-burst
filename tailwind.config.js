@@ -12,7 +12,8 @@ module.exports = {
         cyan1: '#EDF9FF',
         cyan2: '#41EAD4',
         cyan3: '#00C9E0',
-        back: '#011627'
+        back: '#011627',
+        backdim: '#02223B'
       },
       fontFamily: {
         nunito: ['Nunito'],
