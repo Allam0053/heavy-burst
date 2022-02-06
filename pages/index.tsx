@@ -140,36 +140,154 @@ export default function Home() {
         <img src="decoration/Vector1.svg" alt="Vector" className=' bottom-0 absolute opacity-50 h-96 w-96'/>
         <img src="decoration/Vector.svg" alt="Vector" className=' bottom-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
         <div className='w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex pb-24'>
-          <div className='w-full flex flex-col self-center items-center text-center bg-black pt-8 rounded-lg'>
+          <div className='w-full flex flex-col self-center items-center text-center bg-black py-12   rounded-lg'>
             <h2 className='text-4xl font-semibold tracking-wider uppercase font-dmserif'>People’s thoughts</h2>
             <div className='text-sm my-8 font-semibold tracking-wider'>
               SEE WHAT ARE OTHERS SAYING
             </div>
 
             <div className='w-[60%] grid grid-cols-2 gap-4 self-center'>
-              <div className='w-full bg-backdim rounded-lg px-16 text-left relative'>
-                <div className='text-2xl text-cyan2 absolute top-8 left-0'>“</div>
-                <div className='text-sm my-8 font-semibold tracking-wide'>
+              <div className='w-full bg-backdim rounded-lg px-16 py-8 text-left relative'>
+                <div className='text-6xl text-cyan2 absolute top-6 left-6'>“</div>
+                <div className='text-sm font-semibold tracking-wide'>
                   Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
                 </div>
-                <div className='text-sm my-8 tracking-wide'>
+                <div className='text-sm my-8 tracking-wide font-thin'>
                   adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
                 </div>
                 <div className='flex'>
                   <img src="content/testi.png" alt="" className='inline mr-4'/>
-                  <div className='self-center uppercase tracking-wider text-sm font-bold font-nunito'>
+                  <div className='self-center uppercase tracking-wider text-xs font-bold font-nunito'>
                     Judy ROSELESS <br />
                     MARKETING HEAD at ROM.
                   </div>
                 </div>
               </div>
-              <div className='w-full items-end bg-backdim rounded-lg px-16 '>2</div>
+              <div className='w-full bg-backdim rounded-lg px-16 py-8 text-left relative'>
+                <div className='text-6xl text-cyan2 absolute top-6 left-6'>“</div>
+                <div className='text-sm font-semibold tracking-wide'>
+                  Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+                </div>
+                <div className='text-sm my-8 tracking-wide font-thin'>
+                  adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                </div>
+                <div className='flex'>
+                  <img src="content/testi.png" alt="" className='inline mr-4'/>
+                  <div className='self-center uppercase tracking-wider text-xs font-bold font-nunito'>
+                    Judy ROSELESS <br />
+                    MARKETING HEAD at ROM.
+                  </div>
+                </div>
+              </div>
+              <div className='w-full bg-backdim rounded-lg px-16 py-8 text-left relative'>
+                <div className='text-6xl text-cyan2 absolute top-6 left-6'>“</div>
+                <div className='text-sm font-semibold tracking-wide'>
+                  Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+                </div>
+                <div className='text-sm my-8 tracking-wide font-thin'>
+                  adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                </div>
+                <div className='flex'>
+                  <img src="content/testi.png" alt="" className='inline mr-4'/>
+                  <div className='self-center uppercase tracking-wider text-xs font-bold font-nunito'>
+                    Judy ROSELESS <br />
+                    MARKETING HEAD at ROM.
+                  </div>
+                </div>
+              </div>
+              <div className='w-full bg-backdim rounded-lg px-16 py-8 text-left relative'>
+                <div className='text-6xl text-cyan2 absolute top-6 left-6'>“</div>
+                <div className='text-sm font-semibold tracking-wide'>
+                  Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+                </div>
+                <div className='text-sm my-8 tracking-wide font-thin'>
+                  adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                </div>
+                <div className='flex'>
+                  <img src="content/testi.png" alt="" className='inline mr-4'/>
+                  <div className='self-center uppercase tracking-wider text-xs font-bold font-nunito'>
+                    Judy ROSELESS <br />
+                    MARKETING HEAD at ROM.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      
+      <div className='bg-gradient-to-b from-back to-black relative'>
+        <div className='w-full text-cyan1 flex flex-col self-center items-center text-center py-12 px-2 md:px-20 lg:px-24 xl:px-48 rounded-lg'>
+          <h2 className='text-4xl font-semibold tracking-wider uppercase font-dmserif'>See you soon!</h2>
+          <div className='text-sm my-4 font-semibold tracking-wider'>
+            We hope to meet each other very soon.
+          </div>
+          <div className='w-[2px] h-16 my-16 bg-cyan2 rounded-full'></div>
+        </div>
+      </div>
+
+      <div className='bg-black relative grid grid-cols-5 lg:px-[20%] pb-12'>
+        <div className='text-cyan1'>
+          <h5 className='uppercase text-lg tracking-wide font-bold'>About</h5>
+          <div className='flex items-center my-2'>
+            <div className='h-[2px] w-16 bg-cyan2 rounded-full'></div>
+            <div className='h-[8px] w-[8px] bg-transparent border-2 border-cyan2 rotate-45'></div>
+          </div>
+          <div className='font-nunito font-thin my-2'>Our mission</div>
+          <div className='font-nunito font-thin mb-2'>Terms</div>
+          <div className='font-nunito font-thin mb-2'>Copyright</div>
+        </div>
+        <div className='text-cyan1'>
+          <h5 className='uppercase text-lg tracking-wide font-bold'>FAQ</h5>
+          <div className='flex items-center my-2'>
+            <div className='h-[2px] w-16 bg-cyan2 rounded-full'></div>
+            <div className='h-[8px] w-[8px] bg-transparent border-2 border-cyan2 rotate-45'></div>
+          </div>
+          <div className='font-nunito font-thin my-2'>Rules</div>
+          <div className='font-nunito font-thin mb-2'>Tickets</div>
+          <div className='font-nunito font-thin mb-2'>Editions</div>
+          <div className='font-nunito font-thin mb-2'>Contribute</div>
+        </div>
+        <div className='text-cyan1'>
+          <h5 className='uppercase text-lg tracking-wide font-bold'>Event</h5>
+          <div className='flex items-center my-2'>
+            <div className='h-[2px] w-16 bg-cyan2 rounded-full'></div>
+            <div className='h-[8px] w-[8px] bg-transparent border-2 border-cyan2 rotate-45'></div>
+          </div>
+          <div className='font-nunito font-thin my-2'>Star Gazing</div>
+          <div className='font-nunito font-thin mb-2'>Dunes Madness</div>
+          <div className='font-nunito font-thin mb-2'>Spooky Land</div>
+        </div>
+        <div className='text-cyan1'>
+          <h5 className='uppercase text-lg tracking-wide font-bold'>Contact Us</h5>
+          <div className='flex items-center my-2'>
+            <div className='h-[2px] w-16 bg-cyan2 rounded-full'></div>
+            <div className='h-[8px] w-[8px] bg-transparent border-2 border-cyan2 rotate-45'></div>
+          </div>
+          <div className='font-nunito font-thin my-2'>hello@example.com</div>
+          <div className='font-nunito font-thin mb-2'>(405) 555-0128</div>
+          <div className='font-nunito font-thin mb-2'>(252) 555-0126</div>
+        </div>
+        <div className='text-cyan1'>
+          <h5 className='uppercase text-lg tracking-wide font-bold'>Follow us</h5>
+          <div className='flex items-center my-2'>
+            <div className='h-[2px] w-16 bg-cyan2 rounded-full'></div>
+            <div className='h-[8px] w-[8px] bg-transparent border-2 border-cyan2 rotate-45'></div>
+          </div>
+          <div className='z-10 pr-4 pb-2 mb-2 ease duration-150 w-fit'>
+            <a href="https://github.com/Allam0053">
+              <FontAwesomeIcon icon={faInstagram} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer' size="lg"/>
+            </a>
+            <a href="#">
+              <FontAwesomeIcon icon={faFacebook} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer mx-2' size="lg"/>
+            </a>
+            <a href="#">
+              <FontAwesomeIcon icon={faTwitter} className='text-cyan3 hover:text-cyan1 ease duration-200 cursor-pointer' size="lg"/>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </>
   )
 }
