@@ -5,7 +5,7 @@ function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="content scrollbar-hidden">
       <Navbar />
-      {children}
+        {children}
       <Footer />
     </div>
   );

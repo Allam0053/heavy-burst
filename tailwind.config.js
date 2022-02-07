@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
       },
+      backgroundPosition: {
+        'pos': 'var(--bg-position)'
+      },
       colors: {
         cyan1: '#EDF9FF',
         cyan2: '#41EAD4',

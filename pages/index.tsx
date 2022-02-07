@@ -94,7 +94,7 @@ export default function Home() {
         <img src="decoration/Vector.svg" alt="Vector" className='right-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
         <img src="decoration/Vector1.svg" alt="Vector" className=' bottom-0 absolute opacity-50 h-96 w-96'/>
         <img src="decoration/Vector.svg" alt="Vector" className=' bottom-0 absolute opacity-50 h-[48rem] w-[48rem]'/>
-        <div className='w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex pb-24'>
+        <div className='w-full text-cyan1 pt-16 px-2 md:px-20 lg:px-24 xl:px-48 flex pb-24 relative'>
           <div className='w-[50%] pr-12 self-center flex justify-end'>
             <div className="w-[60%] items-start">
               <h2 className='text-4xl font-semibold inline tracking-wider uppercase font-dmserif'>About Us</h2>
