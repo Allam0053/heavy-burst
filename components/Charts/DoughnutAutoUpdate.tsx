@@ -20,13 +20,13 @@ function dummy(): string[] {
   return dummy
 }
 
-export default function LineAutoUpdate(props: any) {
+export default function DoughnutAutoUpdate(props: any) {
   BaseChartRegister()
-  const url = 'https://www.randomnumberapi.com/api/v1.0/random?min=-100&max=100'
+  const url = 'https://www.randomnumberapi.com/api/v1.0/random?min=1&max=100'
 
   let ctx: HTMLCanvasElement | null = null
   let myChart: Chart | null = null
-  var chartData = Array(100).fill(0)
+  var chartData = Array(5).fill(100)
   var [isLoaded, setIsLoaded] = useState(false)
 
   var MONTHS = [
@@ -44,43 +44,38 @@ export default function LineAutoUpdate(props: any) {
     'December',
   ]
 
-  var config = {
-    type: 'line',
-    data: {
-      labels: dummy(),
-      datasets: [
-        {
-          label: 'My First dataset',
-          backgroundColor: '#ff618b',
-          borderColor: '#ff618b',
-          borderWidth: 1,
-          radius: 0,
-          data: chartData,
-          fill: false,
-        },
-      ],
-    },
+  const DATA_COUNT = 5
+  const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 }
+
+  const data = {
+    labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue'],
+    datasets: [
+      {
+        label: 'Dataset 1',
+        data: chartData,
+        backgroundColor: [
+          '#FFAEBC',
+          '#A0E7E5',
+          '#B4F8C8',
+          '#FBE7C6',
+          '#75E6DA',
+        ],
+      },
+    ],
+  }
+
+  const config = {
+    type: 'doughnut',
+    data: data,
     options: {
-      animation: {
-        duration: 0,
-      },
       responsive: true,
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-      tooltips: {
-        mode: 'index',
-        intersect: false,
-      },
-      hover: {
-        mode: 'nearest',
-        intersect: true,
-      },
-      scales: {
-        y: {
-          min: -200,
-          max: 200,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Chart.js Doughnut Chart',
         },
       },
     },
@@ -118,6 +113,15 @@ export default function LineAutoUpdate(props: any) {
         })
         chart.update()
         return 0
+      })
+      .then((res) => {
+        if (res == 1) {
+          console.log('update failed')
+        } else if (res == 0) {
+          console.log('update success')
+        } else {
+          console.log('unexpected error')
+        }
       })
   }
 

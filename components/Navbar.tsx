@@ -18,7 +18,7 @@ function Navbar() {
           <Link href="/">
             <a
               className={
-                'navlink ' +
+                'navlink md:mr-6 ' +
                 (router.pathname == '/'
                   ? ' navlink-active'
                   : ' navlink-inactive')
@@ -30,7 +30,7 @@ function Navbar() {
           <Link href="/about">
             <a
               className={
-                'navlink hover:text-cyan2 md:mx-12 ' +
+                'navlink hover:text-cyan2 md:mr-6 ' +
                 (router.pathname == '/about'
                   ? ' navlink-active'
                   : ' navlink-inactive')
@@ -42,7 +42,7 @@ function Navbar() {
           <Link href="/blogs">
             <a
               className={
-                'navlink hover:text-cyan2 ' +
+                'navlink hover:text-cyan2 md:mr-6 ' +
                 (router.pathname.startsWith('/blogs')
                   ? ' navlink-active'
                   : ' navlink-inactive')
@@ -55,7 +55,7 @@ function Navbar() {
             <a
               className={
                 'navlink hover:text-cyan2 ' +
-                (router.pathname.startsWith('/blogs')
+                (router.pathname.startsWith('/dashboard')
                   ? ' navlink-active'
                   : ' navlink-inactive')
               }
