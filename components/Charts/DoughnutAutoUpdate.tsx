@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Chart } from 'chart.js'
+import { Chart, ChartItem } from 'chart.js'
 import BaseChartRegister from './../BaseChart'
 // import useFetch from './../UseFetch'
 // import useSWR from 'swr'
@@ -84,7 +84,7 @@ export default function DoughnutAutoUpdate(props: any) {
   useEffect(() => {
     if (myChart == null && isLoaded == false) {
       ctx = document.getElementById(props.chartId) as HTMLCanvasElement
-      myChart = new Chart(ctx.getContext('2d'), config)
+      myChart = new Chart(ctx.getContext('2d') as ChartItem, config)
       window.myLine = myChart
     }
     setIsLoaded(true)
