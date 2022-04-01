@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Chart } from 'chart.js'
+import { Chart, ChartItem } from 'chart.js'
 import BaseChartRegister from './BaseChart'
 
 export default function LineChart(props: any) {
@@ -105,7 +105,7 @@ export default function LineChart(props: any) {
     let ctx: HTMLCanvasElement | null
     ctx = document.getElementById(props.chartId) as HTMLCanvasElement
     let myCanvas = ctx.getContext('2d')
-    let myChart = new Chart(myCanvas, config)
+    let myChart = new Chart(myCanvas as ChartItem, config)
     window.myLine = myChart
   }, [])
   return (

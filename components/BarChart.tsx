@@ -26,6 +26,7 @@ import {
   Tooltip,
   SubTitle,
   ChartItem,
+  ChartConfiguration,
 } from 'chart.js'
 
 Chart.register(
@@ -156,7 +157,7 @@ export default function LineChart(props: any) {
     let ctx: HTMLCanvasElement | null
     ctx = document.getElementById('line-chart') as HTMLCanvasElement
     let myCanvas = ctx.getContext('2d')
-    let myChart = new Chart(myCanvas, config)
+    let myChart = new Chart(myCanvas as ChartItem, config)
     window.myLine = myChart
   }, [])
   return (
