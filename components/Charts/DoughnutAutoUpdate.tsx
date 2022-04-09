@@ -75,7 +75,7 @@ export default function DoughnutAutoUpdate(props: any) {
         },
         title: {
           display: true,
-          text: 'Chart.js Doughnut Chart',
+          text: 'Chart.js with setInterval',
         },
       },
     },
@@ -84,8 +84,10 @@ export default function DoughnutAutoUpdate(props: any) {
   useEffect(() => {
     if (myChart == null && isLoaded == false) {
       ctx = document.getElementById(props.chartId) as HTMLCanvasElement
-      myChart = new Chart(ctx.getContext('2d') as ChartItem, config)
-      window.myLine = myChart
+      // @ts-ignore
+      myChart = new Chart(ctx.getContext('2d') as ChartItem, config) // no typescript error
+      // @ts-ignore
+      window.myLine = myChart // no typescript error
     }
     setIsLoaded(true)
 

@@ -1,113 +1,59 @@
 import { useEffect } from 'react'
-import { Chart, ChartItem } from 'chart.js'
+import { Line } from 'react-chartjs-2'
 import BaseChartRegister from './BaseChart'
+
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top' as const,
+    },
+    title: {
+      display: true,
+      text: 'Chart.js Line Chart',
+    },
+  },
+}
 
 export default function LineChart(props: any) {
   BaseChartRegister()
 
-  useEffect(() => {
-    var MONTHS = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ]
-    var config = {
-      type: 'line',
-      data: {
-        labels: [
-          'January',
-          'February',
-          'March',
-          'April',
-          'May',
-          'June',
-          'July',
+  const data = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
+      {
+        label: 'My First dataset',
+        backgroundColor: '#ff618b',
+        borderColor: '#ff618b',
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
         ],
-        datasets: [
-          {
-            label: 'My First dataset',
-            backgroundColor: '#ff618b',
-            borderColor: '#ff618b',
-            data: [
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-            ],
-            fill: false,
-          },
-          {
-            label: 'My Second dataset',
-            fill: false,
-            backgroundColor: '#ff618b',
-            borderColor: '#4d5eff',
-            data: [
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-              randomScalingFactor(),
-            ],
-          },
+        fill: false,
+      },
+      {
+        label: 'My Second dataset',
+        fill: false,
+        backgroundColor: '#ff618b',
+        borderColor: '#4d5eff',
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
         ],
       },
-      options: {
-        responsive: true,
-        title: {
-          display: true,
-          text: 'Chart.js Line Chart',
-        },
-        tooltips: {
-          mode: 'index',
-          intersect: false,
-        },
-        hover: {
-          mode: 'nearest',
-          intersect: true,
-        },
-        scales: {
-          xAxes: [
-            {
-              display: true,
-              scaleLabel: {
-                display: true,
-                labelString: 'Month',
-              },
-            },
-          ],
-          yAxes: [
-            {
-              display: true,
-              scaleLabel: {
-                display: true,
-                labelString: 'Value',
-              },
-            },
-          ],
-        },
-      },
-    }
+    ],
+  }
 
-    let ctx: HTMLCanvasElement | null
-    ctx = document.getElementById(props.chartId) as HTMLCanvasElement
-    let myCanvas = ctx.getContext('2d')
-    let myChart = new Chart(myCanvas as ChartItem, config)
-    window.myLine = myChart
-  }, [])
   return (
     <>
       <div className="bg-blueGray-700 relative mb-6 flex w-full min-w-0 flex-col break-words rounded shadow-lg">
@@ -124,7 +70,7 @@ export default function LineChart(props: any) {
         <div className="flex-auto p-4">
           {/* Chart */}
           <div className="h-350-px relative">
-            <canvas id={props.chartId}></canvas>
+            <Line data={data} options={options} />
           </div>
         </div>
       </div>
